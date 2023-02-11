@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" >
           <img src="#" alt="Логотип Седона">
@@ -40,8 +40,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index-catalog">
-      <section class="catalog-filter">
+    <main class="main-index-catalog" data-test="main">
+      <section class="catalog-filter" data-test=" filter">
         <h1 class="catalog-filter-title">Гостиницы Седоны</h1>
         <nav class="filter-breadcrumbs">
           <ol class="filter-breadcrumbs-list">
@@ -50,6 +50,7 @@
             </li>
             <li class="breadcrumbs-item">Гостиницы</li>
           </ol>
+        </nav>
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="hotels-filter-group">
@@ -73,8 +74,8 @@
             <button type="submit" class="form-submit">Применить</button>
             <button type="reset" class="form-reset">Сбросить</button>
           </form>
-        </section>
-        <section class="main-block">
+      </section>
+        <section class="main-block" data-test="catalog">
             <h2 class="visually-hidden">Результаты сортировки гостиниц</h2>
             <p class="sorting-container-text">Найдено гостиниц: <span id="hotel-number">38</span></p>
             <select class="select-control" aria-label="Сортировка">
@@ -152,7 +153,7 @@
               </li>
             </ul>
         </section>
-        <section class="newsletter-catalog">
+        <section class="newsletter-catalog" data-test="subscribe">
           <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -163,7 +164,7 @@
           </form>
         </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer-social-list">
