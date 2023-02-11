@@ -40,6 +40,39 @@
         </ul>
       </nav>
     </header>
+    <main class="main-index-catalog">
+      <section class="catalog-filter">
+        <h1 class="catalog-filter-title">Гостиницы Седоны</h1>
+        <nav class="filter-breadcrumbs">
+          <ol class="filter-breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+            </li>
+            <li class="breadcrumbs-item">Гостиницы</li>
+          </ol>
+          <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Инфраструктура:</legend>
+              <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
+              <label for="pool" class="filter-label">Бассейн</label>
+              <input type="checkbox" name="parking" id="parking" class="visually-hidden" checked>
+              <label for="parking" class="filter-label">Парковка</label>
+              <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+              <label for="wi-fi" class="filter-label">Wi-fi</label>
+            </fieldset>
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
+              <input type="radio" name="hotel" value="hotel" id="hotel" class="visually-hidden" checked>
+              <label for="hotel" class="filter-label">Гостиница</label>
+              <input type="radio" name="motel" value="motel" id="motel" class="visually-hidden">
+              <label for="motel" class="filter-label">Мотель</label>
+              <input type="radio" name="apartments" value="apartments" id="apartments" class="visually-hidden">
+              <label for="apartments" class="filter-label">Апартаменты</label>
+            </fieldset>
+            <button type="submit" class="form-submit">Применить</button>
+            <button type="reset" class="form-reset">Сбросить</button>
+          </form>
+        </section>
 
 
   </body>
